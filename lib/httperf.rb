@@ -240,7 +240,7 @@ class HTTPerf
 
   def validate_options options
     options.each_key do |k|
-      raise "'#{k}' is an invalid httperf param" unless params.keys.include?(k)
+      raise "'#{k}' is an invalid httperf param" unless params.keys.include?(k.to_s)
     end
   end
 
